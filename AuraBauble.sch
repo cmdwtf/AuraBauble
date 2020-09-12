@@ -430,109 +430,11 @@ Wire Wire Line
 Wire Wire Line
 	9500 2100 9750 2100
 Connection ~ 9750 2100
-Wire Wire Line
-	9750 2100 10250 2100
-Wire Wire Line
-	9900 900  10250 900 
 Connection ~ 9900 900 
 Wire Wire Line
 	9900 900  9900 850 
 Wire Wire Line
-	10250 1650 10250 900 
-Connection ~ 10250 900 
-Wire Wire Line
-	10250 1950 10250 2100
-Wire Wire Line
-	10250 2100 10550 2100
-Wire Wire Line
-	10550 1950 10550 2100
-Connection ~ 10550 2100
-Wire Wire Line
-	10550 2100 10850 2100
-Wire Wire Line
-	10850 1950 10850 2100
-Wire Wire Line
-	10850 1650 10850 1400
-Connection ~ 10850 1400
-Wire Wire Line
-	10850 1400 10850 1250
-$Comp
-L Device:D_Zener D?
-U 1 1 5F610AD1
-P 10850 1800
-F 0 "D?" V 10804 1880 50  0000 L CNN
-F 1 "3.6V" V 10895 1880 50  0000 L CNN
-F 2 "" H 10850 1800 50  0001 C CNN
-F 3 "~" H 10850 1800 50  0001 C CNN
-	1    10850 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5F6110CF
-P 10550 1800
-F 0 "D?" V 10504 1880 50  0000 L CNN
-F 1 "3.6V" V 10595 1880 50  0000 L CNN
-F 2 "" H 10550 1800 50  0001 C CNN
-F 3 "~" H 10550 1800 50  0001 C CNN
-	1    10550 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5F6115F3
-P 10250 1800
-F 0 "D?" V 10204 1880 50  0000 L CNN
-F 1 "3.6V" V 10295 1880 50  0000 L CNN
-F 2 "" H 10250 1800 50  0001 C CNN
-F 3 "~" H 10250 1800 50  0001 C CNN
-	1    10250 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9500 1400 10850 1400
-Wire Wire Line
-	10250 900  10550 900 
-Wire Wire Line
-	10850 1400 10950 1400
-Wire Wire Line
-	9500 1300 10550 1300
-Wire Wire Line
-	10550 1650 10550 1300
-Connection ~ 10550 1300
-Wire Wire Line
-	10550 1300 10950 1300
-Wire Wire Line
-	10550 1300 10550 1250
-Wire Wire Line
-	10550 950  10550 900 
-Connection ~ 10550 900 
-Wire Wire Line
-	10550 900  10850 900 
-Wire Wire Line
-	10850 950  10850 900 
-$Comp
-L Device:D_Zener D?
-U 1 1 5F626D93
-P 10850 1100
-F 0 "D?" V 10804 1180 50  0000 L CNN
-F 1 "3.6V" V 10895 1180 50  0000 L CNN
-F 2 "" H 10850 1100 50  0001 C CNN
-F 3 "~" H 10850 1100 50  0001 C CNN
-	1    10850 1100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D?
-U 1 1 5F62603B
-P 10550 1100
-F 0 "D?" V 10504 1180 50  0000 L CNN
-F 1 "3.6V" V 10595 1180 50  0000 L CNN
-F 2 "" H 10550 1100 50  0001 C CNN
-F 3 "~" H 10550 1100 50  0001 C CNN
-	1    10550 1100
-	0    1    1    0   
-$EndComp
+	10750 1950 10750 2100
 Wire Wire Line
 	10100 1800 10100 2200
 Connection ~ 9500 2100
@@ -541,7 +443,6 @@ Wire Wire Line
 Wire Wire Line
 	9200 1800 9500 1800
 Connection ~ 9500 1800
-Connection ~ 10250 2100
 Wire Notes Line
 	8750 1750 10000 1750
 Wire Notes Line
@@ -564,4 +465,42 @@ Text Notes 10200 700  0    50   ~ 0
 Transient Protection
 Text Notes 8850 4350 0    50   ~ 0
 Programmer may\nhave pullup.
+$Comp
+L dk_TVS-Diodes:PRTR5V0U2X_215 D?
+U 1 1 5F64F554
+P 10550 1450
+F 0 "D?" V 10800 1750 60  0000 L CNN
+F 1 "PRTR5V0U2X_215" H 10150 1950 60  0000 L CNN
+F 2 "digikey-footprints:TO-253-4" H 10750 1650 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 10750 1750 60  0001 L CNN
+F 4 "1727-3884-1-ND" H 10750 1850 60  0001 L CNN "Digi-Key_PN"
+F 5 "PRTR5V0U2X,215" H 10750 1950 60  0001 L CNN "MPN"
+F 6 "Circuit Protection" H 10750 2050 60  0001 L CNN "Category"
+F 7 "TVS - Diodes" H 10750 2150 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 10750 2250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/PRTR5V0U2X,215/1727-3884-1-ND/1589981" H 10750 2350 60  0001 L CNN "DK_Detail_Page"
+F 10 "TVS DIODE 5.5V SOT143B" H 10750 2450 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 10750 2550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10750 2650 60  0001 L CNN "Status"
+	1    10550 1450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9500 1400 10250 1400
+Wire Wire Line
+	9500 1300 10250 1300
+Wire Wire Line
+	9900 900  10750 900 
+Wire Wire Line
+	10750 900  10750 950 
+Wire Wire Line
+	9750 2100 10750 2100
+Wire Wire Line
+	10250 1300 10250 950 
+Wire Wire Line
+	10250 950  10350 950 
+Wire Wire Line
+	10250 1400 10250 1950
+Wire Wire Line
+	10250 1950 10350 1950
 $EndSCHEMATC
