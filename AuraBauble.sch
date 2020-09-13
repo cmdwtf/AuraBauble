@@ -178,8 +178,6 @@ F 3 "" H 7700 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 1000 6700 1200
-Wire Wire Line
 	6700 1650 6700 1900
 Connection ~ 6700 1650
 Wire Wire Line
@@ -228,8 +226,6 @@ F 3 "" H 10150 5300 50  0001 C CNN
 	1    10150 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 2500 5850 2500
 Wire Wire Line
 	6200 2600 5850 2600
 Text Label 9150 5000 0    50   ~ 0
@@ -521,7 +517,7 @@ Text Label 7750 2600 2    50   ~ 0
 ~SS~
 Text Label 3650 2350 2    50   ~ 0
 USB_POWER
-Text Label 7750 3400 2    50   ~ 0
+Text Label 7750 3700 2    50   ~ 0
 USB_POWER
 Connection ~ 9650 1100
 $Comp
@@ -773,7 +769,7 @@ Wire Wire Line
 Connection ~ 1300 2500
 Text Notes 7900 2450 0    50   ~ 0
 PINMUX:C
-Text Notes 7900 3500 0    50   ~ 0
+Text Notes 7900 3550 0    50   ~ 0
 PINMUX:G
 Wire Notes Line
 	7800 2250 8400 2250
@@ -784,35 +780,9 @@ Wire Notes Line
 Wire Notes Line
 	7800 3350 8400 3350
 Wire Notes Line
-	8400 3350 8400 3600
-$Comp
-L Connector:TestPoint_Small TP3
-U 1 1 5FD10D71
-P 8200 2100
-F 0 "TP3" H 8248 2100 50  0000 L CNN
-F 1 "TestPoint_Small" H 8248 2055 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8400 2100 50  0001 C CNN
-F 3 "~" H 8400 2100 50  0001 C CNN
-	1    8200 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP4
-U 1 1 5FD178B4
-P 8200 2200
-F 0 "TP4" H 8248 2200 50  0000 L CNN
-F 1 "TestPoint_Small" H 8248 2155 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8400 2200 50  0001 C CNN
-F 3 "~" H 8400 2200 50  0001 C CNN
-	1    8200 2200
-	1    0    0    -1  
-$EndComp
+	8400 3350 8400 3700
 Wire Notes Line
-	8400 3600 7800 3600
-Wire Wire Line
-	7200 2100 8200 2100
-Wire Wire Line
-	7200 2200 8200 2200
+	8400 3700 7800 3700
 Text Notes 4700 3200 0    50   ~ 0
 Ext XTAL [37.6.(2|3)]\nClose to uC as able.
 Text Notes 5300 2550 0    50   ~ 0
@@ -823,8 +793,6 @@ Wire Notes Line
 	5200 2450 5200 2600
 Wire Notes Line
 	5800 2600 5200 2600
-Wire Wire Line
-	6200 2800 5650 2800
 Wire Wire Line
 	5650 2800 5650 2950
 Connection ~ 5650 2950
@@ -959,22 +927,22 @@ Wire Wire Line
 	2800 1100 3150 1100
 Text Notes 5900 3200 2    25   ~ 0
 32.768 kHz\n7pF\n±20PPM
-Text Label 7750 2900 2    50   ~ 0
+Text Label 7750 2700 2    50   ~ 0
 TOUCHX
-Text Label 7750 3000 2    50   ~ 0
+Text Label 7750 2800 2    50   ~ 0
 TOUCH_Y_0
-Text Label 7750 3100 2    50   ~ 0
+Text Label 7750 2900 2    50   ~ 0
 TOUCH_Y_1
-Text Label 7750 3200 2    50   ~ 0
+Text Label 7750 3000 2    50   ~ 0
 TOUCH_Y_2
-Text Notes 7900 3100 0    50   ~ 0
+Text Notes 7900 2900 0    50   ~ 0
 PINMUX:B\nPTC
 Wire Notes Line
-	7800 2850 8400 2850
+	7800 2650 8400 2650
 Wire Notes Line
-	8400 2850 8400 3200
+	8400 2650 8400 3000
 Wire Notes Line
-	8400 3200 7800 3200
+	8400 3000 7800 3000
 Wire Wire Line
 	750  3950 1350 3950
 Wire Wire Line
@@ -1350,33 +1318,21 @@ Wire Wire Line
 	5100 4900 4500 4900
 Wire Wire Line
 	6700 3900 6700 4000
-$Comp
-L MCU_Microchip_SAMD:ATSAMD11D14A-M U1
-U 1 1 5FA830AE
-P 6700 2900
-F 0 "U1" H 6350 3850 50  0000 C CNN
-F 1 "ATSAMD11D14A-M" H 7100 3850 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6700 1550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf" H 6700 1900 50  0001 C CNN
-F 4 "ATSAMD11D14A-MUTCT-ND" H 6700 2900 50  0000 C CNN "Digi-Key"
-	1    6700 2900
-	1    0    0    1   
-$EndComp
 Connection ~ 6700 4100
 Wire Wire Line
 	7200 3600 7750 3600
 Wire Wire Line
 	7200 3500 7750 3500
 Wire Wire Line
-	7200 3400 7750 3400
-Wire Wire Line
-	7200 3200 7750 3200
-Wire Wire Line
-	7200 3100 7750 3100
+	7200 3700 7750 3700
 Wire Wire Line
 	7200 3000 7750 3000
 Wire Wire Line
 	7200 2900 7750 2900
+Wire Wire Line
+	7200 2800 7750 2800
+Wire Wire Line
+	7200 2700 7750 2700
 Wire Wire Line
 	5950 4000 6700 4000
 Connection ~ 5950 4000
@@ -1415,8 +1371,31 @@ Wire Wire Line
 Connection ~ 6700 4000
 Wire Wire Line
 	6700 4000 6700 4100
-NoConn ~ 7200 2700
-NoConn ~ 7200 2800
-NoConn ~ 7200 3700
+NoConn ~ 7200 3100
+NoConn ~ 7200 3200
 NoConn ~ 7200 3300
+Wire Wire Line
+	6200 2800 5650 2800
+Wire Wire Line
+	6200 2500 5850 2500
+$Comp
+L MCU_Microchip_SAMD:ATSAMD11D14A-M U1
+U 1 1 5FA830AE
+P 6700 2900
+F 0 "U1" H 6350 3850 50  0000 C CNN
+F 1 "ATSAMD11D14A-M" H 7100 3850 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6700 1550 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42363-SAM-D11_Datasheet.pdf" H 6700 1900 50  0001 C CNN
+F 4 "ATSAMD11D14A-MUTCT-ND" H 6650 2800 50  0001 C CNN "Digi-Key"
+	1    6700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 1000 6700 1200
+Text Label 7750 3400 2    50   ~ 0
+USB_SOF
+Wire Wire Line
+	7200 3400 7750 3400
+NoConn ~ 7200 2100
+NoConn ~ 7200 2200
 $EndSCHEMATC
