@@ -30,4 +30,15 @@ K Single Gate NOR LVC CMOS
 F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
 $ENDCMP
 #
+$CMP CT_Capacitive_Touch_Point_2
+D Capacitive Touch, pad, Solder Jumper, 2-pole, open,
+K ct CT solder jumper SPST capacitive touch captouch
+F ~
+$ENDCMP
+#
+$CMP VLED
+D Power symbol creates a global label with name "VLED"
+K power-flag
+$ENDCMP
+#
 #End Doc Library
