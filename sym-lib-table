@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Connector_DebugEdge)(type Legacy)(uri ${KIPRJMOD}/../DebugEdge/Connector_DebugEdge.lib)(options "")(descr ""))
+  (lib (name AuraBauble_Custom)(type Legacy)(uri ${KIPRJMOD}/AuraBauble_Custom.lib)(options "")(descr ""))
 )
