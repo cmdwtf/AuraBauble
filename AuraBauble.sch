@@ -489,21 +489,21 @@ F 3 "~" H 9650 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 3100 7750 3100
+	7200 2300 7750 2300
 Wire Wire Line
-	7200 3200 7750 3200
+	7200 2400 7750 2400
 Wire Wire Line
-	7200 3300 7750 3300
+	7200 2500 7750 2500
 Wire Wire Line
-	7200 3000 7750 3000
-Text Label 7750 3100 2    50   ~ 0
+	7200 2600 7750 2600
+Text Label 7750 2300 2    50   ~ 0
 MOSI
-Text Label 7750 3200 2    50   ~ 0
+Text Label 7750 2400 2    50   ~ 0
 MISO
-Text Label 7750 3300 2    50   ~ 0
+Text Label 7750 2500 2    50   ~ 0
 SCK
-Text Label 7750 3000 2    50   ~ 0
-~SS~
+Text Label 7750 2600 2    50   ~ 0
+~CS~
 Text Label 3650 2350 2    50   ~ 0
 USB_POWER
 Text Label 7750 2100 2    50   ~ 0
@@ -756,16 +756,16 @@ Connection ~ 1150 2500
 Wire Wire Line
 	1650 2500 1300 2500
 Connection ~ 1300 2500
-Text Notes 7900 3150 0    50   ~ 0
+Text Notes 7900 2450 0    50   ~ 0
 PINMUX:C
 Text Notes 7900 3550 0    50   ~ 0
 PINMUX:G
 Wire Notes Line
-	7800 2950 8450 2950
+	7800 2250 8450 2250
 Wire Notes Line
-	8450 2950 8450 3300
+	8450 2250 8450 2600
 Wire Notes Line
-	8450 3300 7800 3300
+	8450 2600 7800 2600
 Wire Notes Line
 	7800 3350 8400 3350
 Wire Notes Line
@@ -916,22 +916,20 @@ Wire Wire Line
 	2800 1100 3150 1100
 Text Notes 5900 3200 2    25   ~ 0
 32.768 kHz\n7pF\n±20PPM
-Text Label 7750 2700 2    50   ~ 0
+Text Label 7750 3000 2    50   ~ 0
 TOUCHX
-Text Label 7750 2800 2    50   ~ 0
+Text Label 7750 3100 2    50   ~ 0
 TOUCH_Y_0
-Text Label 7750 2900 2    50   ~ 0
+Text Label 7750 3200 2    50   ~ 0
 TOUCH_Y_1
-Text Label 7750 2200 2    50   ~ 0
+Text Label 7750 3300 2    50   ~ 0
 TOUCH_Y_2
-Text Notes 7900 2850 0    50   ~ 0
+Text Notes 7900 3200 0    50   ~ 0
 PINMUX:B\nPTC
 Wire Notes Line
-	7800 2650 8450 2650
+	7800 2950 8450 2950
 Wire Notes Line
-	8450 2650 8450 2900
-Wire Notes Line
-	8450 2200 7800 2200
+	8450 2950 8450 3300
 Wire Wire Line
 	750  3950 1350 3950
 Wire Wire Line
@@ -1007,304 +1005,12 @@ Wire Notes Line
 	650  4250 2250 4250
 Wire Notes Line
 	2250 4250 2250 3100
-$Comp
-L AuraBauble_Custom:VLED #PWR04
-U 1 1 601901B2
-P 1500 5050
-F 0 "#PWR04" H 1500 4900 50  0001 C CNN
-F 1 "VLED" H 1515 5223 50  0000 C CNN
-F 2 "" H 1500 5050 50  0001 C CNN
-F 3 "" H 1500 5050 50  0001 C CNN
-	1    1500 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L AuraBauble_Custom:VLED #PWR010
-U 1 1 6018FD15
-P 2250 5050
-F 0 "#PWR010" H 2250 4900 50  0001 C CNN
-F 1 "VLED" H 2265 5223 50  0000 C CNN
-F 2 "" H 2250 5050 50  0001 C CNN
-F 3 "" H 2250 5050 50  0001 C CNN
-	1    2250 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L AuraBauble_Custom:VLED #PWR013
-U 1 1 6018F715
-P 3000 5050
-F 0 "#PWR013" H 3000 4900 50  0001 C CNN
-F 1 "VLED" H 3015 5223 50  0000 C CNN
-F 2 "" H 3000 5050 50  0001 C CNN
-F 3 "" H 3000 5050 50  0001 C CNN
-	1    3000 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L AuraBauble_Custom:VLED #PWR016
-U 1 1 601868D2
-P 3750 5050
-F 0 "#PWR016" H 3750 4900 50  0001 C CNN
-F 1 "VLED" H 3765 5223 50  0000 C CNN
-F 2 "" H 3750 5050 50  0001 C CNN
-F 3 "" H 3750 5050 50  0001 C CNN
-	1    3750 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L AuraBauble_Custom:VLED #PWR020
-U 1 1 6017DBDE
-P 4500 5600
-F 0 "#PWR020" H 4500 5450 50  0001 C CNN
-F 1 "VLED" H 4515 5773 50  0000 C CNN
-F 2 "" H 4500 5600 50  0001 C CNN
-F 3 "" H 4500 5600 50  0001 C CNN
-	1    4500 5600
-	1    0    0    -1  
-$EndComp
-Text Notes 700  4500 0    50   ~ 0
-SPI For ARGB LEDs [26]\nPINMUX:C
-Text Label 750  6500 0    50   ~ 0
-SCK
-Text Label 4500 4900 0    50   ~ 0
-MISO
-Text Label 750  5350 0    50   ~ 0
-MOSI
-Wire Wire Line
-	5100 5000 4500 5000
-Wire Wire Line
-	4400 6500 750  6500
-Wire Wire Line
-	1200 5350 1050 5350
-$Comp
-L power:GND #PWR05
-U 1 1 5FACC677
-P 1500 5650
-F 0 "#PWR05" H 1500 5400 50  0001 C CNN
-F 1 "GND" H 1505 5477 50  0000 C CNN
-F 2 "" H 1500 5650 50  0001 C CNN
-F 3 "" H 1500 5650 50  0001 C CNN
-	1    1500 5650
-	1    0    0    -1  
-$EndComp
-Text Label 4500 5000 0    50   ~ 0
-~SS~
-$Comp
-L LED:WS2812B LED2
-U 1 1 5FB0FC37
-P 2250 5350
-F 0 "LED2" H 2000 5600 50  0000 L CNN
-F 1 "SK6805" H 2350 5600 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 2300 5050 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2350 4975 50  0001 L TNN
-	1    2250 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5FB0FC43
-P 2250 5650
-F 0 "#PWR011" H 2250 5400 50  0001 C CNN
-F 1 "GND" H 2255 5477 50  0000 C CNN
-F 2 "" H 2250 5650 50  0001 C CNN
-F 3 "" H 2250 5650 50  0001 C CNN
-	1    2250 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B LED3
-U 1 1 5FB15975
-P 3000 5350
-F 0 "LED3" H 2750 5600 50  0000 L CNN
-F 1 "SK6805" H 3100 5600 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 3050 5050 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3100 4975 50  0001 L TNN
-	1    3000 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 5FB15981
-P 3000 5650
-F 0 "#PWR014" H 3000 5400 50  0001 C CNN
-F 1 "GND" H 3005 5477 50  0000 C CNN
-F 2 "" H 3000 5650 50  0001 C CNN
-F 3 "" H 3000 5650 50  0001 C CNN
-	1    3000 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED:WS2812B LED4
-U 1 1 5FB1BBDB
-P 3750 5350
-F 0 "LED4" H 3500 5600 50  0000 L CNN
-F 1 "SK6805" H 3850 5600 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 3800 5050 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3850 4975 50  0001 L TNN
-	1    3750 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR017
-U 1 1 5FB1BBE7
-P 3750 5650
-F 0 "#PWR017" H 3750 5400 50  0001 C CNN
-F 1 "GND" H 3755 5477 50  0000 C CNN
-F 2 "" H 3750 5650 50  0001 C CNN
-F 3 "" H 3750 5650 50  0001 C CNN
-	1    3750 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 5350 1950 5350
-Wire Wire Line
-	2550 5350 2700 5350
-Wire Wire Line
-	3300 5350 3450 5350
-$Comp
-L Jumper:SolderJumper_2_Open BP1
-U 1 1 5FB30145
-P 2650 6100
-F 0 "BP1" H 2650 5967 50  0000 C CNN
-F 1 "Close If Option B Selected" H 2650 5876 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 2650 6100 50  0001 C CNN
-F 3 "~" H 2650 6100 50  0001 C CNN
-	1    2650 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 5350 4300 5350
-Wire Wire Line
-	4300 5350 4300 5800
-Wire Wire Line
-	4500 5700 4500 5600
-Wire Wire Line
-	1050 5350 1050 6100
-Wire Wire Line
-	1050 6100 2500 6100
-Connection ~ 1050 5350
-Wire Wire Line
-	1050 5350 750  5350
-Wire Wire Line
-	2800 6100 4300 6100
-Wire Wire Line
-	4300 6100 4300 5800
-Connection ~ 4300 5800
-Wire Wire Line
-	4400 6500 4400 5900
 Wire Notes Line
-	1150 4650 4250 4650
+	6300 7400 600  7400
 Wire Notes Line
-	4250 5900 1150 5900
-Wire Wire Line
-	4400 5900 4550 5900
-Wire Wire Line
-	4300 5800 4550 5800
-Wire Wire Line
-	4550 5700 4500 5700
-$Comp
-L power:GND #PWR021
-U 1 1 5FB8A97A
-P 4500 6100
-F 0 "#PWR021" H 4500 5850 50  0001 C CNN
-F 1 "GND" H 4505 5927 50  0000 C CNN
-F 2 "" H 4500 6100 50  0001 C CNN
-F 3 "" H 4500 6100 50  0001 C CNN
-	1    4500 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J1
-U 1 1 5FB53C66
-P 4750 5800
-F 0 "J1" H 4830 5792 50  0000 L CNN
-F 1 "Bauble-Expando!" H 4830 5701 50  0000 L CNN
-F 2 "AuraBauble:BaubleExpando" H 4750 5800 50  0001 C CNN
-F 3 "~" H 4750 5800 50  0001 C CNN
-	1    4750 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 6000 4500 6100
-Wire Wire Line
-	4550 6000 4500 6000
+	600  7400 600  5150
 Wire Notes Line
-	4250 6400 1150 6400
-Wire Notes Line
-	1150 4650 1150 6400
-Wire Notes Line
-	4250 4650 4250 6400
-Text Notes 1200 4750 0    50   ~ 0
-Option A: On-board Lights
-Text Notes 1200 6000 0    50   ~ 0
-Option B: On-board Bypass
-Wire Notes Line
-	2250 4650 2250 4800
-Wire Notes Line
-	2250 4800 1150 4800
-Wire Notes Line
-	2300 5900 2300 6050
-Wire Notes Line
-	2300 6050 1150 6050
-Text Notes 4500 4750 0    50   ~ 0
-Unused SPI Signals
-$Comp
-L Connector:TestPoint_Small TP2
-U 1 1 5FC5CC3B
-P 5100 5000
-F 0 "TP2" H 5148 5000 50  0000 L CNN
-F 1 "TestPoint_Small" H 5148 4955 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 5000 50  0001 C CNN
-F 3 "~" H 5300 5000 50  0001 C CNN
-	1    5100 5000
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	650  4300 5550 4300
-Wire Notes Line
-	5550 4300 5550 6600
-Wire Notes Line
-	5550 6600 650  6600
-Wire Notes Line
-	650  6600 650  4300
-Wire Notes Line
-	4450 4650 5300 4650
-Wire Notes Line
-	5300 4800 4450 4800
-Wire Notes Line
-	4450 5100 5300 5100
-Wire Notes Line
-	4450 4650 4450 5100
-Wire Notes Line
-	5300 4650 5300 5100
-Wire Notes Line
-	650  4550 1650 4550
-Wire Notes Line
-	1650 4550 1650 4300
-$Comp
-L LED:WS2812B LED1
-U 1 1 5FABE3B5
-P 1500 5350
-F 0 "LED1" H 1250 5600 50  0000 L CNN
-F 1 "SK6805" H 1600 5600 50  0000 L CNN
-F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 1550 5050 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1600 4975 50  0001 L TNN
-	1    1500 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint_Small TP1
-U 1 1 5FC5AE05
-P 5100 4900
-F 0 "TP1" H 5148 4900 50  0000 L CNN
-F 1 "TestPoint_Small" H 5148 4855 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5300 4900 50  0001 C CNN
-F 3 "~" H 5300 4900 50  0001 C CNN
-	1    5100 4900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5100 4900 4500 4900
+	6100 5450 6100 5900
 Wire Wire Line
 	6700 3900 6700 4000
 Connection ~ 6700 4100
@@ -1315,13 +1021,13 @@ Wire Wire Line
 Wire Wire Line
 	7200 2100 7750 2100
 Wire Wire Line
-	7200 2200 7750 2200
+	7200 3300 7750 3300
 Wire Wire Line
-	7200 2900 7750 2900
+	7200 3200 7750 3200
 Wire Wire Line
-	7200 2800 7750 2800
+	7200 3100 7750 3100
 Wire Wire Line
-	7200 2700 7750 2700
+	7200 3000 7750 3000
 Wire Wire Line
 	5950 4000 6700 4000
 Connection ~ 5950 4000
@@ -1405,16 +1111,445 @@ F 3 "" H 8950 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	8450 2900 7800 2900
+	8450 3300 7800 3300
+$Comp
+L power:GND #PWR0103
+U 1 1 5F6FF69C
+P 4500 6450
+F 0 "#PWR0103" H 4500 6200 50  0001 C CNN
+F 1 "GND" H 4505 6277 50  0000 C CNN
+F 2 "" H 4500 6450 50  0001 C CNN
+F 3 "" H 4500 6450 50  0001 C CNN
+	1    4500 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L AuraBauble_Custom:VLED #PWR0102
+U 1 1 5F6680AA
+P 4500 5850
+F 0 "#PWR0102" H 4500 5700 50  0001 C CNN
+F 1 "VLED" H 4515 6023 50  0000 C CNN
+F 2 "" H 4500 5850 50  0001 C CNN
+F 3 "" H 4500 5850 50  0001 C CNN
+	1    4500 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6150 4200 6150
+$Comp
+L LED:WS2812B LED5
+U 1 1 5F6364EA
+P 4500 6150
+F 0 "LED5" H 4250 6400 50  0000 L CNN
+F 1 "SK6805" H 4600 6400 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 4550 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 4600 5775 50  0001 L TNN
+	1    4500 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5700 5300 5700
+$Comp
+L Connector:TestPoint_Small TP1
+U 1 1 5FC5AE05
+P 5900 5700
+F 0 "TP1" H 5948 5700 50  0000 L CNN
+F 1 "TestPoint_Small" H 5948 5655 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6100 5700 50  0001 C CNN
+F 3 "~" H 6100 5700 50  0001 C CNN
+	1    5900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B LED1
+U 1 1 5FABE3B5
+P 1500 6150
+F 0 "LED1" H 1250 6400 50  0000 L CNN
+F 1 "SK6805" H 1600 6400 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 1550 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 1600 5775 50  0001 L TNN
+	1    1500 6150
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	8450 2100 7800 2100
-Text Notes 7900 2200 0    50   ~ 0
-PINMUX:B PTC
+	5250 5450 5250 5900
 Wire Notes Line
-	8450 2100 8450 2200
+	5250 5900 6100 5900
+Wire Notes Line
+	6100 5600 5250 5600
+Wire Notes Line
+	5250 5450 6100 5450
+$Comp
+L Connector:TestPoint_Small TP2
+U 1 1 5FC5CC3B
+P 5900 5800
+F 0 "TP2" H 5948 5800 50  0000 L CNN
+F 1 "TestPoint_Small" H 5948 5755 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6100 5800 50  0001 C CNN
+F 3 "~" H 6100 5800 50  0001 C CNN
+	1    5900 5800
+	1    0    0    -1  
+$EndComp
+Text Notes 5300 5550 0    50   ~ 0
+Unused SPI Signals
+Wire Notes Line
+	2300 6850 1150 6850
+Wire Notes Line
+	2300 6700 2300 6850
+Wire Notes Line
+	2250 5600 1150 5600
+Wire Notes Line
+	2250 5450 2250 5600
+Text Notes 1200 6800 0    50   ~ 0
+Option B: On-board Bypass
+Text Notes 1200 5550 0    50   ~ 0
+Option A: On-board Lights
+Wire Notes Line
+	4950 5450 4950 7200
+Wire Notes Line
+	1150 5450 1150 7200
+Wire Notes Line
+	4950 7200 1150 7200
+Wire Wire Line
+	5300 6800 5250 6800
+Wire Wire Line
+	5250 6800 5250 6900
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5FB53C66
+P 5500 6600
+F 0 "J1" H 5580 6592 50  0000 L CNN
+F 1 "Bauble-Expando!" H 5580 6501 50  0000 L CNN
+F 2 "AuraBauble:BaubleExpando" H 5500 6600 50  0001 C CNN
+F 3 "~" H 5500 6600 50  0001 C CNN
+	1    5500 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5FB8A97A
+P 5250 6900
+F 0 "#PWR021" H 5250 6650 50  0001 C CNN
+F 1 "GND" H 5255 6727 50  0000 C CNN
+F 2 "" H 5250 6900 50  0001 C CNN
+F 3 "" H 5250 6900 50  0001 C CNN
+	1    5250 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6500 5250 6500
+Wire Wire Line
+	5050 6600 5300 6600
+Wire Wire Line
+	5150 6700 5300 6700
+Wire Notes Line
+	4950 6700 1150 6700
+Wire Wire Line
+	5150 7300 5150 6700
+Connection ~ 5050 6600
+Wire Wire Line
+	5050 6900 5050 6600
+Wire Wire Line
+	3150 6900 5050 6900
+Wire Wire Line
+	1050 6150 700  6150
+Connection ~ 1050 6150
+Wire Wire Line
+	1050 6900 2850 6900
+Wire Wire Line
+	1050 6150 1050 6900
+Wire Wire Line
+	5250 6500 5250 6400
+Wire Wire Line
+	5050 6150 5050 6600
+Wire Wire Line
+	4800 6150 5050 6150
+$Comp
+L Jumper:SolderJumper_2_Open BP1
+U 1 1 5FB30145
+P 3000 6900
+F 0 "BP1" H 3000 6767 50  0000 C CNN
+F 1 "Close If Option B Selected" H 3000 6676 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3000 6900 50  0001 C CNN
+F 3 "~" H 3000 6900 50  0001 C CNN
+	1    3000 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 6150 3450 6150
+Wire Wire Line
+	2550 6150 2700 6150
+Wire Wire Line
+	1800 6150 1950 6150
+$Comp
+L power:GND #PWR017
+U 1 1 5FB1BBE7
+P 3750 6450
+F 0 "#PWR017" H 3750 6200 50  0001 C CNN
+F 1 "GND" H 3755 6277 50  0000 C CNN
+F 2 "" H 3750 6450 50  0001 C CNN
+F 3 "" H 3750 6450 50  0001 C CNN
+	1    3750 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B LED4
+U 1 1 5FB1BBDB
+P 3750 6150
+F 0 "LED4" H 3500 6400 50  0000 L CNN
+F 1 "SK6805" H 3850 6400 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 3800 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3850 5775 50  0001 L TNN
+	1    3750 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5FB15981
+P 3000 6450
+F 0 "#PWR014" H 3000 6200 50  0001 C CNN
+F 1 "GND" H 3005 6277 50  0000 C CNN
+F 2 "" H 3000 6450 50  0001 C CNN
+F 3 "" H 3000 6450 50  0001 C CNN
+	1    3000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B LED3
+U 1 1 5FB15975
+P 3000 6150
+F 0 "LED3" H 2750 6400 50  0000 L CNN
+F 1 "SK6805" H 3100 6400 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 3050 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3100 5775 50  0001 L TNN
+	1    3000 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5FB0FC43
+P 2250 6450
+F 0 "#PWR011" H 2250 6200 50  0001 C CNN
+F 1 "GND" H 2255 6277 50  0000 C CNN
+F 2 "" H 2250 6450 50  0001 C CNN
+F 3 "" H 2250 6450 50  0001 C CNN
+	1    2250 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:WS2812B LED2
+U 1 1 5FB0FC37
+P 2250 6150
+F 0 "LED2" H 2000 6400 50  0000 L CNN
+F 1 "SK6805" H 2350 6400 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812_EC15_1.5x1.5mm" H 2300 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2350 5775 50  0001 L TNN
+	1    2250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FACC677
+P 1500 6450
+F 0 "#PWR05" H 1500 6200 50  0001 C CNN
+F 1 "GND" H 1505 6277 50  0000 C CNN
+F 2 "" H 1500 6450 50  0001 C CNN
+F 3 "" H 1500 6450 50  0001 C CNN
+	1    1500 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 6150 1050 6150
+Wire Wire Line
+	5150 7300 700  7300
+Wire Wire Line
+	5900 5800 5300 5800
+Text Label 700  6150 0    50   ~ 0
+MOSI_5V
+Text Label 5300 5700 0    50   ~ 0
+MISO_5V
+Text Label 700  7300 0    50   ~ 0
+SCK_5V
+$Comp
+L AuraBauble_Custom:VLED #PWR020
+U 1 1 6017DBDE
+P 5250 6400
+F 0 "#PWR020" H 5250 6250 50  0001 C CNN
+F 1 "VLED" H 5265 6573 50  0000 C CNN
+F 2 "" H 5250 6400 50  0001 C CNN
+F 3 "" H 5250 6400 50  0001 C CNN
+	1    5250 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L AuraBauble_Custom:VLED #PWR016
+U 1 1 601868D2
+P 3750 5850
+F 0 "#PWR016" H 3750 5700 50  0001 C CNN
+F 1 "VLED" H 3765 6023 50  0000 C CNN
+F 2 "" H 3750 5850 50  0001 C CNN
+F 3 "" H 3750 5850 50  0001 C CNN
+	1    3750 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AuraBauble_Custom:VLED #PWR013
+U 1 1 6018F715
+P 3000 5850
+F 0 "#PWR013" H 3000 5700 50  0001 C CNN
+F 1 "VLED" H 3015 6023 50  0000 C CNN
+F 2 "" H 3000 5850 50  0001 C CNN
+F 3 "" H 3000 5850 50  0001 C CNN
+	1    3000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AuraBauble_Custom:VLED #PWR010
+U 1 1 6018FD15
+P 2250 5850
+F 0 "#PWR010" H 2250 5700 50  0001 C CNN
+F 1 "VLED" H 2265 6023 50  0000 C CNN
+F 2 "" H 2250 5850 50  0001 C CNN
+F 3 "" H 2250 5850 50  0001 C CNN
+	1    2250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L AuraBauble_Custom:VLED #PWR04
+U 1 1 601901B2
+P 1500 5850
+F 0 "#PWR04" H 1500 5700 50  0001 C CNN
+F 1 "VLED" H 1515 6023 50  0000 C CNN
+F 2 "" H 1500 5850 50  0001 C CNN
+F 3 "" H 1500 5850 50  0001 C CNN
+	1    1500 5850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4050 3100 4050 5100
+Wire Notes Line
+	2350 3100 2350 5100
+Wire Notes Line
+	2350 5100 4050 5100
+Wire Notes Line
+	3500 3250 2350 3250
+Wire Notes Line
+	2350 3100 4050 3100
+Text Notes 2400 3200 0    50   ~ 0
+SPI Voltage Level Shifting
 NoConn ~ 7200 3700
-NoConn ~ 7200 2600
-NoConn ~ 7200 2500
-NoConn ~ 7200 2400
-NoConn ~ 7200 2300
+$Comp
+L AuraBauble_Custom:NXB0104GU12X U4
+U 1 1 5F8997E8
+P 3150 4150
+F 0 "U4" H 2850 3500 50  0000 C CNN
+F 1 "NXB0104GU12X" H 3500 3500 50  0000 C CNN
+F 2 "AuraBauble:XQFN12" H 3150 3400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/NXB0104.pdf" H 3260 4245 50  0001 C CNN
+F 4 "1727-NXB0104GU12XCT-ND" H 3150 4150 50  0001 C CNN "Digi-Key"
+	1    3150 4150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1150 5450 4950 5450
+Wire Notes Line
+	1650 5400 1650 5150
+Wire Notes Line
+	600  5400 1650 5400
+Text Notes 700  5350 0    50   ~ 0
+SPI For ARGB LEDs [26]\nPINMUX:C
+$Comp
+L power:VCC #PWR025
+U 1 1 5FA0A854
+P 2650 3500
+F 0 "#PWR025" H 2650 3350 50  0001 C CNN
+F 1 "VCC" H 2650 3650 50  0000 C CNN
+F 2 "" H 2650 3500 50  0001 C CNN
+F 3 "" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4450 3900 4450
+Wire Wire Line
+	3550 4250 3900 4250
+Text Label 3900 4450 2    50   ~ 0
+MOSI_5V
+Text Label 3900 4250 2    50   ~ 0
+MISO_5V
+Text Label 3900 4050 2    50   ~ 0
+SCK_5V
+Wire Wire Line
+	3550 4050 3900 4050
+Wire Wire Line
+	3550 3850 3900 3850
+Text Label 3900 3850 2    50   ~ 0
+~CS_5V~
+Wire Wire Line
+	2750 3700 2650 3700
+$Comp
+L power:GND #PWR031
+U 1 1 5FBE66A1
+P 3150 4850
+F 0 "#PWR031" H 3150 4600 50  0001 C CNN
+F 1 "GND" H 3150 4700 50  0000 C CNN
+F 2 "" H 3150 4850 50  0001 C CNN
+F 3 "" H 3150 4850 50  0001 C CNN
+	1    3150 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3500 2650 3700
+Wire Wire Line
+	3550 3700 3750 3700
+Wire Wire Line
+	3750 3700 3750 3500
+Wire Notes Line
+	3500 3100 3500 3250
+Text Label 7750 2200 2    50   ~ 0
+SPI_5V_EN
+Text Label 3550 3350 2    50   ~ 0
+SPI_5V_EN
+Wire Wire Line
+	3150 3350 3150 3450
+Wire Wire Line
+	3150 3350 3550 3350
+Wire Wire Line
+	7200 2200 7750 2200
+Wire Notes Line
+	600  5150 6300 5150
+Wire Notes Line
+	6300 5150 6300 7400
+Text Label 5300 5800 0    50   ~ 0
+~CS_5V~
+Wire Wire Line
+	2750 3850 2450 3850
+Text Label 2450 3850 0    50   ~ 0
+~CS~
+Wire Wire Line
+	2750 4050 2450 4050
+Text Label 2450 4050 0    50   ~ 0
+SCK
+Text Label 2450 4250 0    50   ~ 0
+MISO
+Text Label 2450 4450 0    50   ~ 0
+MOSI
+Wire Wire Line
+	2750 4250 2450 4250
+Wire Wire Line
+	2750 4450 2450 4450
+$Comp
+L power:VBUS #PWR0104
+U 1 1 5FDF908D
+P 3750 3500
+F 0 "#PWR0104" H 3750 3350 50  0001 C CNN
+F 1 "VBUS" H 3765 3673 50  0000 C CNN
+F 2 "" H 3750 3500 50  0001 C CNN
+F 3 "" H 3750 3500 50  0001 C CNN
+	1    3750 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7200 2900
+NoConn ~ 7200 2800
+NoConn ~ 7200 2700
 $EndSCHEMATC

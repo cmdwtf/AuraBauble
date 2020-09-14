@@ -36,6 +36,18 @@ K ct CT solder jumper SPST capacitive touch captouch
 F ~
 $ENDCMP
 #
+$CMP NXB0104GU12X
+D  4-bit, dual supply translating transceiver with auto direction sensing, 1.2V-3.6V Input, 1.65V-5.5V Output, XQFN12 Package
+K Level-Shifter CMOS-TTL-Translation
+F https://assets.nexperia.com/documents/data-sheet/NXB0104.pdf
+$ENDCMP
+#
+$CMP TXB0304RUT
+D 4-Bit Bidirectional Voltage-Level Translator, Auto Direction Sensing, 0.9 - 3.6V APort, 0.9 - 3.6V BPort, Active High Output Enable, Texas_PUQFN-12
+K Level-Shifter CMOS-TTL-Translation
+F http://www.ti.com/lit/ds/symlink/txb0304.pdf
+$ENDCMP
+#
 $CMP VLED
 D Power symbol creates a global label with name "VLED"
 K power-flag
