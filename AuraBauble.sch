@@ -1398,4 +1398,15 @@ Wire Wire Line
 	7200 3400 7750 3400
 NoConn ~ 7200 2100
 NoConn ~ 7200 2200
+$Comp
+L Connector:TestPoint_Small TP3
+U 1 1 5F6C4664
+P 7750 3400
+F 0 "TP3" H 7798 3400 50  0000 L CNN
+F 1 "TestPoint_Small" H 7798 3355 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7950 3400 50  0001 C CNN
+F 3 "~" H 7950 3400 50  0001 C CNN
+	1    7750 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
