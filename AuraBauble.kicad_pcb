@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 16)
-    (tracks 440)
+    (tracks 443)
     (zones 0)
     (modules 39)
     (nets 36)
@@ -12,9 +12,12 @@
   (page A4)
   (title_block
     (title "Aura Bauble")
-    (date 2020-09-13)
+    (date 2020-09-14)
     (rev 0)
     (company cmd.wtf)
+    (comment 1 "BYOBEL: Bring Your Own BlinkEnLights")
+    (comment 3 "addressable RGB LEDs.")
+    (comment 4 "Aura Bauble is a USB device that communicates with ASUS Aura software to control ")
   )
 
   (layers
@@ -24,8 +27,8 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -2478,6 +2481,9 @@
   (via (at 143.4 77.3) (size 0.3556) (drill 0.254) (layers F.Cu B.Cu) (net 3))
   (via (at 147.9 59.4) (size 0.3556) (drill 0.254) (layers F.Cu B.Cu) (net 3))
   (via (at 148.2 71.95) (size 0.3556) (drill 0.254) (layers F.Cu B.Cu) (net 3))
+  (via (at 152.7 67.5) (size 0.3556) (drill 0.254) (layers F.Cu B.Cu) (net 3))
+  (via (at 150.1 66.5) (size 0.3556) (drill 0.254) (layers F.Cu B.Cu) (net 3))
+  (via (at 148.9 65.5) (size 0.3556) (drill 0.254) (layers F.Cu B.Cu) (net 3))
   (segment (start 144.8775 62.685) (end 145.0125 62.55) (width 0.508) (layer F.Cu) (net 4))
   (segment (start 144 62.685) (end 144.8775 62.685) (width 0.508) (layer F.Cu) (net 4))
   (via (at 146.5 59.3) (size 0.889) (drill 0.381) (layers F.Cu B.Cu) (net 4))

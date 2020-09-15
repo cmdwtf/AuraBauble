@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Aura Bauble"
-Date "2020-09-12"
+Date "2020-09-14"
 Rev "0"
 Comp "cmd.wtf"
 Comment1 "BYOBEL: Bring Your Own BlinkEnLights"
