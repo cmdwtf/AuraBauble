@@ -350,10 +350,10 @@ Transient Protection
 Text Notes 9000 4450 0    50   ~ 0
 Programmer may\nhave pullup.
 $Comp
-L dk_TVS-Diodes:PRTR5V0U2X_215 D6
+L dk_TVS-Diodes:PRTR5V0U2X_215 D2
 U 1 1 5F64F554
 P 10550 1450
-F 0 "D6" V 10750 1050 60  0000 L CNN
+F 0 "D2" V 10750 1050 60  0000 L CNN
 F 1 "PRTR5V0U2X_215" H 10200 1800 60  0000 L CNN
 F 2 "digikey-footprints:TO-253-4" H 10750 1650 60  0001 L CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 10750 1750 60  0001 L CNN
